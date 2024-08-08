@@ -2,9 +2,9 @@ import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 
 const Users = () => {
-  const lodedUsers = useLoaderData();
+  const loadedUsers = useLoaderData();
 
-  const [users, setUsers] = useState(lodedUsers);
+  const [users, setUsers] = useState(loadedUsers);
 
   const handleDelete = (id) => {
     fetch(`http://localhost:5000/user/${id}`, {
@@ -41,7 +41,7 @@ const Users = () => {
           <tbody>
             {/* row 1 */}
 
-            {lodedUsers.map((user) => (
+            {users.map((user) => (
               <tr key={user._id}>
                 <th>1</th>
                 <td>{user.email}</td>

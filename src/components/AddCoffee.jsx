@@ -38,11 +38,19 @@ const AddCoffee = () => {
       });
   };
   return (
-    <div className="max-w-screen-lg mx-auto">
+    <div className="max-w-screen-lg mx-auto bg-[#F4F3F0] rounded-xl p-16 ">
+      <div className=" text-center space-y-3">
+        <h2 className="text-5xl font-bold">Add New Coffee</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
+          ducimus expedita ratione, at ex itaque corrupti minus maiores nobis!
+          Iste.
+        </p>
+      </div>
       <form onSubmit={handleAddCoffee}>
-        <div className="md:grid grid-cols-2 gap-6 bg-[#F4F3F0] rounded-xl p-16 ">
+        <div className="md:grid grid-cols-2 gap-6 ">
           <div className="form-control">
-            <label className="label">Coffee Name</label>
+            <label className="label font-semibold">Coffee Name</label>
             <input
               type="text"
               name="coffeeName"
@@ -52,7 +60,7 @@ const AddCoffee = () => {
           </div>
 
           <div className="form-control">
-            <label className="label">Chef</label>
+            <label className="label font-semibold">Chef</label>
             <input
               type="text"
               name="chef"
@@ -61,7 +69,7 @@ const AddCoffee = () => {
             />
           </div>
           <div className="form-control">
-            <label className="label">Supplier</label>
+            <label className="label font-semibold">Supplier</label>
             <input
               type="text"
               name="supplier"
@@ -70,7 +78,7 @@ const AddCoffee = () => {
             />
           </div>
           <div className="form-control">
-            <label className="label"> Taste</label>
+            <label className="label font-semibold"> Taste</label>
             <input
               type="text"
               name="taste"
@@ -79,7 +87,7 @@ const AddCoffee = () => {
             />
           </div>
           <div className="form-control">
-            <label className="label"> Category</label>
+            <label className="label font-semibold"> Category</label>
             <input
               type="text"
               name="category"
@@ -88,7 +96,7 @@ const AddCoffee = () => {
             />
           </div>
           <div className="form-control">
-            <label className="label"> Details</label>
+            <label className="label font-semibold"> Details</label>
             <input
               type="text"
               name="details"
@@ -99,7 +107,7 @@ const AddCoffee = () => {
 
           <div className="col-span-2">
             <div className="form-control">
-              <label className="label"> Photo</label>
+              <label className="label font-semibold"> Photo</label>
               <input
                 type="text"
                 name="photo"

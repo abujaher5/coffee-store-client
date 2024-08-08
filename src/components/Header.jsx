@@ -11,6 +11,9 @@ const Header = () => {
         {" "}
         <button className="px-4 py-2 rounded-lg bg-gray-300">Users</button>
       </NavLink>
+      <NavLink className="px-4 py-2 rounded-lg bg-gray-300" to="/addCoffee">
+        <button>Add Coffee</button>
+      </NavLink>
 
       <NavLink to="/signup">
         {" "}

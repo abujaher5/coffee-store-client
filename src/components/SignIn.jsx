@@ -2,8 +2,8 @@ import { useContext } from "react";
 import { AuthContext } from "../providers/AuthProvider";
 
 const SignIn = () => {
+  const { signInUser } = useContext(AuthContext);
   const handleSignIn = (e) => {
-    const { signInUser } = useContext(AuthContext);
     e.preventDefault();
     const form = e.target;
     const email = form.email.value;

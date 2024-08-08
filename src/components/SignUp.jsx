@@ -3,6 +3,7 @@ import { AuthContext } from "../providers/AuthProvider";
 
 const SignUp = () => {
   const { createUser } = useContext(AuthContext);
+
   const handleSignUp = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -20,6 +21,7 @@ const SignUp = () => {
         //new user has been created
 
         const createdAt = result.user?.metadata?.creationTime;
+        // createdAt= creationTime( when one user signUp)
 
         const user = { email, createdAt: createdAt };
         fetch("http://localhost:5000/user", {
